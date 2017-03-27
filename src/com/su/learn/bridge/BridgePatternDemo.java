@@ -1,0 +1,15 @@
+package com.su.learn.bridge;
+
+public class BridgePatternDemo {
+	
+	public static void main(String[] args) {
+		
+		Shape greenCircle = new Circle(100, 100, 10, new GreenCircle());
+		Shape redCircle = new Circle(1000, 1000, 100, new RedCircle());
+		
+		greenCircle.draw();
+		redCircle.draw();
+		
+	}
+
+}
